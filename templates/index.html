@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Video Streaming Demo</title>
+
+	    <style>
+
+	    	.row {
+				  display: flex;
+				}
+
+			img {
+			    max-width: 100%;
+			    max-height: 100%;
+			}
+
+
+	    	.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+			.vfeed {
+			    float: left;
+				width: 50%;
+				padding: 5px;
+			}
+
+			.sfeed {
+			 	float: left;
+				width: 50%;
+				padding: 5px;
+			}
+
+			.class {
+				text-align: center;
+			}
+
+		</style>
+
+ </head>
+  <body>
+    <h1 class="text" >Welcome to my video streaming demo!</h1>
+
+	<div class="row">
+	  <div class="vfeed">
+	  	<h3 class="text" > Camera Feed </h3>
+	    <img src="{{ url_for('video_feed') }}" alt="" >
+	  </div>
+	  <div class="sfeed">
+	  	<h3 class="text"> Screen Feed </h3>
+	    <img src="{{ url_for('screen_feed') }}" alt="">
+	  </div>
+	</div>
+
+  </body>
+</html>
