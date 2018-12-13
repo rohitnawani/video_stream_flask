@@ -1,5 +1,11 @@
 # Video Streaming Application
 ---
+Screenshot
+
+![alt text](cap.png "Logo Title Text 1")
+
+
+---
 ## Dependencies:
 - python version 3 or above
 - cv2 library
@@ -18,3 +24,6 @@ After installing the libraries listed above, run the following on terminal:
 
 - `export FLASK_APP=main.py`
 - `flask run --host=0.0.0.0`
+
+---
+Reference: [this](http://www.chioka.in/python-live-video-streaming-example/)
